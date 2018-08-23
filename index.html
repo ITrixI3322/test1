@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body> 
+
+
+<div id="Parent">
+	<table>
+		<tr >
+			<th colspan='4'>Товары</th>
+		</tr>
+
+		<tr>
+			<th>Название</th>
+			<th>Количество</th>
+			<th>Закупочная цена</th>
+			<th>Категория товара</th>
+		</tr>
+			
+
+	</table>
+	<p id="editText" style = 'display: none'>
+		Название<input type="text" id = "editName">
+		Количество<input type="text" id = "editQuantity">
+		Закупочная цена<input type="text" id="editPrice">
+		Категория<select name="" id="editCategory">
+			<option value="Товар">Товар</option>
+			<option value="Услуга">Услуга</option>
+		</select>
+		<input type="submit" id="Ok" value="OK">
+	</p>
+	<p id="paragrIndexation" style = 'display: none'>
+		% Индексации <input type="text" id = "sumIndexation">
+		<input type="submit" id="GoIndexation" value="OK">
+	</p>
+
+</div><br>
+<input type="submit" value="Добвить продукт" id="addProduct">
+<br><br>
+<input type="submit" value="Индексация" id="makeIndexation">
+
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
